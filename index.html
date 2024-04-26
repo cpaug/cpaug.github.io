@@ -159,18 +159,26 @@
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/ddim-insertion-collage.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Consistency Policy</span> accelerates diffusion policy for real time inference on compute constraint robotics settings.
-        Should have an explainer like video, or the comparison between DDiM and CP here
-      </h2>
+    <div class="hero-body" style="display: flex; align-items: center; justify-content: space-between;">
+      <div style="flex: 1; padding-right: 10px;">
+        <video id="teaser-left" autoplay muted loop playsinline style="width: 100%; height: 100%;">
+          <source src="./static/videos/ctm-insertion-collage.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">Consistency Policy</h2>
+      </div>
+      <div style="flex: 1; padding-left: 10px;">
+        <video id="teaser-right" autoplay muted loop playsinline style="width: 100%; height: 100%;">
+          <source src="./static/videos/ddim-insertion-collage.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">Diffusion Policy</h2>
+      </div>
     </div>
+    <h2 class="subtitle has-text-centered">
+      <span class="dnerf">Consistency Policy</span> accelerates diffusion policy for real time inference on compute constrained robotics platforms.
+    </h2>
   </div>
 </section>
+
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -216,36 +224,30 @@
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
-
+      <div class="column is-full">
+          <h2 class="title is-3">More real World Experiments: Trash Clean Up</h2>
+      </div>
+  </div>
+  <div class="columns is-centered">
       <!-- Visual Effects. -->
       <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Plug insertion: TODO</h2>
-
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Trash clean up: TODO</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
+        <div class="content has-text-centered">
+          <video id="trash-cp" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/trash-cp-collage.mp4" type="video/mp4">
+              </video>
+              <h2 class="subtitle">Consistency Policy</h2>
           </div>
-
-        </div>
       </div>
-    </div>
-    <!--/ Matting. -->
-
+      <div class="column">
+        <div class="content has-text-centered">
+          <video id="trash-ddim" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/trash-ddim-collage.mp4" type="video/mp4">
+              </video>
+              <h2 class="subtitle">Diffusion Policy</h2>
+          </div>
+      </div>
+  </div>
+  
     <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">

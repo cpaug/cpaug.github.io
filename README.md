@@ -1,4 +1,6 @@
 # Consistency Policy
+See our website for information!
+
 
 # Acknowledgements 
 

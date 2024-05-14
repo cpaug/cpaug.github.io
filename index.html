@@ -164,18 +164,24 @@
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body" style="display: flex; align-items: center; justify-content: space-between;">
-      <div style="flex: 1; padding-right: 10px;">
-        <video id="teaser-left" autoplay muted controls playsinline style="width: 100%; height: 100%;">
-          <source src="./static/videos/jimmy/ctm/action/IMG_3177-4x.mp4" type="video/mp4">
-        </video>
-        <h2 class="subtitle has-text-centered">Consistency Policy</h2>
-      </div>
-      <div style="flex: 1; padding-left: 10px;">
-        <video id="teaser-right" autoplay muted controls playsinline style="width: 100%; height: 100%;">
-          <source src="./static/videos/jimmy/ddim/action/IMG_2820-4x.mp4" type="video/mp4">
-        </video>
-        <h2 class="subtitle has-text-centered">Diffusion Policy</h2>
+    <div class="hero-body">
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content has-text-centered">
+            <video id="teaser-left" autoplay muted controls playsinline style="width: 100%; height: 100%;">
+              <source src="./static/videos/jimmy/ctm/action/IMG_3177-4x.mp4" type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered">Consistency Policy</h2>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content has-text-centered">
+            <video id="teaser-right" autoplay muted controls playsinline style="width: 100%; height: 100%;">
+              <source src="./static/videos/jimmy/ddim/action/IMG_2820-4x.mp4" type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered">Diffusion Policy</h2>
+          </div>
+        </div>
       </div>
     </div>
     <h2 class="subtitle has-text-centered">
@@ -183,6 +189,8 @@
     </h2>
   </div>
 </section>
+
+
 
 
 <section class="section">
@@ -350,36 +358,34 @@
       <div class="column is-12">
           <h2 class="title is-3">Methods</h2>
       </div>
-  
-      <!-- First content block: Text on the left, Image on the right -->
-      <div class="column is-12">
-          <div class="box" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 1em;">
-              <div style="flex-basis: 35%; margin-right: 1em;">
-                <p>Both Diffusion and Consistency Policy work by sampling random
-                actions and denoising them into action predictions.
-                <br> <strong>Diffusion Policy</strong> denoises an action sequence
-                over many steps, resulting in high inference costs. <br><strong>Consistency Policy</strong> generates an action sequence in a single
-                step.</p>              </div>
-              <div style="flex-basis: 60%;">
-                  <img src="static/images/c_p_teaser.png" alt="Diffusion Policy" style="width: 100%;">
-              </div>
+      <div class="columns is-mobile is-multiline">
+        <!-- First content block: Text on the left, Image on the right -->
+        <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
+          <div class="box">
+            <p>Both Diffusion and Consistency Policy work by sampling random actions and denoising them into action predictions. <strong>Diffusion Policy</strong> denoises an action sequence over many steps, resulting in high inference costs. <strong>Consistency Policy</strong> generates an action sequence in a single step.</p>
           </div>
-      </div>
-  
-      <!-- Second content block: Image on the left, Text on the right -->
-      <div class="column is-12">
-          <div class="box" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 1em;">
-              <div style="flex-basis: 60%; margin-right: 1em;">
-                  <img src="static/images/ctm_obj.png" alt="Consistency Policy" style="width: 100%;">
-              </div>
-              <div style="flex-basis: 35%;">
-                We distill with the CTM objective, which enforces self-consistency along a PFODE (<span style="color:black;">black</span>) by sampling points <em>s</em>, <em>u</em>, <em>t</em> in time, denoising from <em>t → u</em> with a teacher model under stopgrad (<span style="color:green;">green</span>), denoising from <em>t → s</em> with the student model (<span style="color:blue;">blue</span>), and denoising <em>u → s</em> with the student model under stopgrad (<span style="color:orange;">orange</span>). We then use the stopgrad student model to take both generated positions at time <em>s</em> back to time 0. The difference between these two final generations is the computed loss, <span style="color:red;">L<sub>CTM</sub></span> (<span style="color:red;">red</span>). 
-                <br><br>
-                In our experiments, we found <em>u = t − 1</em> and <em>s</em> arbitrary below <em>u</em> to work best.
-              </div>
+        </div>
+        <div class="column is-full-mobile is-half-tablet is-two-thirds-desktop">
+          <div class="box">
+            <img src="static/images/c_p_teaser.png" alt="Diffusion Policy" style="width: 100%;">
           </div>
+        </div>
+      
+        <!-- Second content block: Image on the left, Text on the right -->
+        <div class="column is-full-mobile is-half-tablet is-two-thirds-desktop">
+          <div class="box">
+            <img src="static/images/ctm_obj.png" alt="Consistency Policy" style="width: 100%;">
+          </div>
+        </div>
+        <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
+          <div class="box">
+            <p>We distill with the CTM objective, which enforces self-consistency along a PFODE (<span style="color:black;">black</span>) by sampling points <em>s</em>, <em>u</em>, <em>t</em> in time, denoising from <em>t → u</em> with a teacher model under stopgrad (<span style="color:green;">green</span>), denoising from <em>t → s</em> with the student model (<span style="color:blue;">blue</span>), and denoising <em>u → s</em> with the student model under stopgrad (<span style="color:orange;">orange</span>). We then use the stopgrad student model to take both generated positions at time <em>s</em> back to time 0. The difference between these two final generations is the computed loss, <span style="color:red;">L<sub>CTM</sub></span> (<span style="color:red;">red</span>). 
+              <br><br>
+              In our experiments, we found <em>u = t − 1</em> and <em>s</em> arbitrary below <em>u</em> to work best.
+            </p>
+          </div>
+        </div>
       </div>
-  </div>
   
     
     

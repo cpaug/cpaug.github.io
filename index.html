@@ -94,6 +94,8 @@
               <a href="https://aaditya-prasad.github.io/">Aaditya Prasad</a><sup>1</sup>,</span>
             <span class="author-block">
               <a href="https://kevin-thankyou-lin.github.io/">Kevin Lin</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://jimmyyhwu.github.io/">Jimmy Wu</a><sup>2</sup>,</span>
             <span class="author-block">
               <a href="https://alexzhou907.github.io/">Linqi Zhou</a><sup>1</sup>,
             </span>
@@ -104,13 +106,14 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Stanford University</span>
+            <span class="author-block"><sup>2</sup>Princeton University</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="TODO"
+                <a href="https://arxiv.org/pdf/2405.07503"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -119,7 +122,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="TODO"
+                <a href="https://arxiv.org/abs/2405.07503"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -127,7 +130,7 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
+              <!-- Video Link.
               <span class="link-block">
                 <a href="TODO"
                    class="external-link button is-normal is-rounded is-dark">
@@ -136,7 +139,7 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/Aaditya-Prasad/Consistency-Policy/"
@@ -161,20 +164,24 @@
   <div class="container is-max-desktop">
     <div class="hero-body" style="display: flex; align-items: center; justify-content: space-between;">
       <div style="flex: 1; padding-right: 10px;">
-        <video id="teaser-left" autoplay muted loop playsinline style="width: 100%; height: 100%;">
-          <source src="./static/videos/ctm-insertion-collage.mp4" type="video/mp4">
+        <video id="teaser-left" autoplay muted controls loop playsinline style="width: 100%; height: 100%;">
+          <source src="./static/videos/jimmy/ctm/action/IMG_3177-4x.mp4" type="video/mp4">
         </video>
         <h2 class="subtitle has-text-centered">Consistency Policy</h2>
       </div>
       <div style="flex: 1; padding-left: 10px;">
-        <video id="teaser-right" autoplay muted loop playsinline style="width: 100%; height: 100%;">
-          <source src="./static/videos/ddim-insertion-collage.mp4" type="video/mp4">
+        <video id="teaser-right" autoplay muted controls loop playsinline style="width: 100%; height: 100%;">
+          <source src="./static/videos/jimmy/ddim/action/IMG_2820-4x.mp4" type="video/mp4">
         </video>
         <h2 class="subtitle has-text-centered">Diffusion Policy</h2>
       </div>
     </div>
     <h2 class="subtitle has-text-centered">
+<<<<<<< Updated upstream
       <span class="dnerf">Consistency Policy</span> accelerates Diffusion Policy for real time inference on compute constrained robotics platforms.
+=======
+      <span class="dnerf">Consistency Policy</span> accelerates Diffusion Policy for real time inference on compute constrained robotics platforms. The above videos are 4x sped up for brevity.. All other videos are real time.
+>>>>>>> Stashed changes
     </h2>
   </div>
 </section>
@@ -222,41 +229,76 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-
     <div class="columns is-centered">
       <div class="column is-full">
+<<<<<<< Updated upstream
           <h2 class="title is-3">More Real World Experiments: Trash Clean Up</h2>
+=======
+          <h2 class="title is-3">Real World Experiments</h2>
+>>>>>>> Stashed changes
       </div>
-  </div>
-  <div class="columns is-centered">
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content has-text-centered">
-          <video id="trash-cp" autoplay controls muted loop playsinline height="100%">
-                  <source src="./static/videos/trash-cp-collage.mp4" type="video/mp4">
-              </video>
-              <h2 class="subtitle">Consistency Policy</h2>
-          </div>
+    </div>
+    
+    <div class="columns is-centered">
+      <div class="column is-full">
+          <h3 class="subtitle" style="font-size: 1.8rem; font-weight: normal;">Trash Clean Up</h3>
       </div>
-      <div class="column">
-        <div class="content has-text-centered">
-          <video id="trash-ddim" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/trash-ddim-collage.mp4" type="video/mp4">
-              </video>
-              <h2 class="subtitle">Diffusion Policy</h2>
-          </div>
+    </div>
+    <div class="columns is-centered">
+        <!-- Visual Effects. -->
+        <div class="column">
+          <div class="content has-text-centered">
+            <video id="trash-cp" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/trash-cp-collage.mp4" type="video/mp4">
+                </video>
+                <h4 class="subtitle" style="font-size: 1.5rem; font-weight: normal; margin-top: 0.5rem;">Consistency Policy</h4>
+            </div>
+        </div>
+        <div class="column">
+          <div class="content has-text-centered">
+            <video id="trash-ddim" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/trash-ddim-collage.mp4" type="video/mp4">
+                </video>
+                <h4 class="subtitle" style="font-size: 1.5rem; font-weight: normal; margin-top: 0.5rem;">Diffusion Policy</h4>
+            </div>
+        </div>
+    </div>
+    
+    <div class="columns is-centered">
+      <div class="column is-full">
+          <h3 class="subtitle" style="font-size: 1.80rem; font-weight: normal;">Plug Insertion</h3>
       </div>
-  </div>
+    </div>
+    <div class="columns is-centered">
+        <!-- Visual Effects. -->
+        <div class="column">
+          <div class="content has-text-centered">
+            <video id="trash-cp" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/ctm-insertion-collage.mp4" type="video/mp4">
+                </video>
+                <h4 class="subtitle" style="font-size: 1.5rem; font-weight: normal; margin-top: 0.5rem;">Consistency Policy</h4>
+            </div>
+        </div>
+        <div class="column">
+          <div class="content has-text-centered">
+            <video id="trash-ddim" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/ddim-insertion-collage.mp4" type="video/mp4">
+                </video>
+                <h4 class="subtitle" style="font-size: 1.5rem; font-weight: normal; margin-top: 0.5rem;">Diffusion Policy</h4>
+            </div>
+        </div>
+    </div>
+    
   
     <!-- Animation. -->
-    <div class="columns is-centered">
+    <div class="columns is-centered" style="margin-top: 60px;">
       <div class="column is-full-width">
         <h2 class="title is-3">Simulation experiments</h2>
 
         <!-- Interpolating. -->
         <div class="content has-text-justified">
           <p>
-            Consistency Policy performs xyz on benchmarks xyz. Add images from DP simulation benchmark too.
+            We test 6 different simulation tasks across the Robomimic, Franka Kitchen, and Push-T benchmarks. We compare Consistency Policy with Diffusion Policy and other related speed-up methods. 
           </p>
         </div>					
           <div class="box alt" style="margin-bottom: 1em;">
@@ -351,7 +393,7 @@
 
 
     <!-- Concurrent Work. -->
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Related Links</h2>
 
@@ -377,19 +419,15 @@
     </div>
     <!--/ Concurrent Work. -->
 
-  </div>
+  </div> 
 </section>
 
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}</code></pre>
+    <pre><code>Coming Soon!
+</code></pre>
   </div>
 </section>
 

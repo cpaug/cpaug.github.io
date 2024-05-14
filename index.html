@@ -100,7 +100,7 @@
               <a href="https://alexzhou907.github.io/">Linqi Zhou</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a><sup>1</sup>,
+              <a href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a><sup>1</sup>
             </span>
           </div>
 
@@ -108,8 +108,11 @@
             <span class="author-block"><sup>1</sup>Stanford University</span>
             <span class="author-block"><sup>2</sup>Princeton University</span>
           </div>
+          
 
           <div class="column has-text-centered">
+            <div class="is-size-4 publication-authors"> RSS 2024 </div>
+    </div>
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
@@ -156,7 +159,6 @@
           </div>
         </div>
       </div>
-    </div>
   </div>
 </section>
 
@@ -164,20 +166,20 @@
   <div class="container is-max-desktop">
     <div class="hero-body" style="display: flex; align-items: center; justify-content: space-between;">
       <div style="flex: 1; padding-right: 10px;">
-        <video id="teaser-left" autoplay muted controls loop playsinline style="width: 100%; height: 100%;">
+        <video id="teaser-left" autoplay muted controls playsinline style="width: 100%; height: 100%;">
           <source src="./static/videos/jimmy/ctm/action/IMG_3177-4x.mp4" type="video/mp4">
         </video>
         <h2 class="subtitle has-text-centered">Consistency Policy</h2>
       </div>
       <div style="flex: 1; padding-left: 10px;">
-        <video id="teaser-right" autoplay muted controls loop playsinline style="width: 100%; height: 100%;">
+        <video id="teaser-right" autoplay muted controls playsinline style="width: 100%; height: 100%;">
           <source src="./static/videos/jimmy/ddim/action/IMG_2820-4x.mp4" type="video/mp4">
         </video>
         <h2 class="subtitle has-text-centered">Diffusion Policy</h2>
       </div>
     </div>
     <h2 class="subtitle has-text-centered">
-      <span class="dnerf">Consistency Policy</span> accelerates Diffusion Policy for real time inference on compute constrained robotics platforms. The above videos are 4x sped up for brevity.. All other videos are real time.
+      <span class="dnerf">Consistency Policy</span> accelerates Diffusion Policy for real time inference on compute constrained robotics platforms. The above videos are 4x sped up for brevity. All other videos are 1x speed.
     </h2>
   </div>
 </section>
@@ -197,7 +199,7 @@
             By virtue of its fast inference speed, Consistency Policy can enable low latency decision making in resource-constrained robotic setups. A Consistency Policy is distilled from a pretrained Diffusion Policy by enforcing self-consistency along the Diffusion Policy's learned trajectories. We compare Consistency Policy with Diffusion Policy and other related speed-up methods across 6 simulation tasks as well as two real-world tasks in which we demonstrate inference on a laptop GPU. For all these tasks, Consistency Policy speeds up inference by an order of magnitude compared to the fastest alternative method and maintains competitive success rates. 
           </p>
           <p>
-            We also show that the Conistency Policy training procedure is robust to the pretrained Diffusion Policy's quality, a useful result that helps practioners avoid extensive testing of the pretrained model. Key design decisions that enabled this performance are the choice of consistency objective, reduced initial sample variance, and the choice of preset chaining steps. Code and training details will be released publicly. </p><p> We will be presenting Consistency Policy at RSS 2024. 
+            We also show that the Conistency Policy training procedure is robust to the pretrained Diffusion Policy's quality, a useful result that helps practioners avoid extensive testing of the pretrained model. Key design decisions that enabled this performance are the choice of consistency objective, reduced initial sample variance, and the choice of preset chaining steps. </p><p> We will be presenting Consistency Policy at RSS 2024. 
           </p>
           <p></p>
         </div>
@@ -233,7 +235,7 @@
     
     <div class="columns is-centered">
       <div class="column is-full">
-          <h3 class="subtitle" style="font-size: 1.8rem; font-weight: normal;">Trash Clean Up</h3>
+          <h3 class="subtitle" style="font-size: 1.5rem; font-weight: normal;">Trash Clean Up</h3>
       </div>
     </div>
     <div class="columns is-centered">
@@ -243,7 +245,7 @@
             <video id="trash-cp" autoplay controls muted loop playsinline height="100%">
                     <source src="./static/videos/trash-cp-collage.mp4" type="video/mp4">
                 </video>
-                <h4 class="subtitle" style="font-size: 1.5rem; font-weight: normal; margin-top: 0.5rem;">Consistency Policy</h4>
+                <h4 class="subtitle" style="font-size: 1.3rem; font-weight: normal; margin-top: 0.5rem;">Consistency Policy</h4>
             </div>
         </div>
         <div class="column">
@@ -251,14 +253,14 @@
             <video id="trash-ddim" autoplay controls muted loop playsinline height="100%">
               <source src="./static/videos/trash-ddim-collage.mp4" type="video/mp4">
                 </video>
-                <h4 class="subtitle" style="font-size: 1.5rem; font-weight: normal; margin-top: 0.5rem;">Diffusion Policy</h4>
+                <h4 class="subtitle" style="font-size: 1.3rem; font-weight: normal; margin-top: 0.5rem;">Diffusion Policy</h4>
             </div>
         </div>
     </div>
     
     <div class="columns is-centered">
       <div class="column is-full">
-          <h3 class="subtitle" style="font-size: 1.80rem; font-weight: normal;">Plug Insertion</h3>
+          <h3 class="subtitle" style="font-size: 1.5rem; font-weight: normal;">Plug Insertion</h3>
       </div>
     </div>
     <div class="columns is-centered">
@@ -268,7 +270,7 @@
             <video id="trash-cp" autoplay controls muted loop playsinline height="100%">
                     <source src="./static/videos/ctm-insertion-collage.mp4" type="video/mp4">
                 </video>
-                <h4 class="subtitle" style="font-size: 1.5rem; font-weight: normal; margin-top: 0.5rem;">Consistency Policy</h4>
+                <h4 class="subtitle" style="font-size: 1.3rem; font-weight: normal; margin-top: 0.5rem;">Consistency Policy</h4>
             </div>
         </div>
         <div class="column">
@@ -276,7 +278,7 @@
             <video id="trash-ddim" autoplay controls muted loop playsinline height="100%">
               <source src="./static/videos/ddim-insertion-collage.mp4" type="video/mp4">
                 </video>
-                <h4 class="subtitle" style="font-size: 1.5rem; font-weight: normal; margin-top: 0.5rem;">Diffusion Policy</h4>
+                <h4 class="subtitle" style="font-size: 1.3rem; font-weight: normal; margin-top: 0.5rem;">Diffusion Policy</h4>
             </div>
         </div>
     </div>
@@ -355,7 +357,7 @@
               <div style="flex-basis: 35%; margin-right: 1em;">
                 <p>Both Diffusion and Consistency Policy work by sampling random
                 actions and denoising them into action predictions.
-                respective generation process.<br> <strong>Diffusion Policy</strong> denoises an action sequence
+                <br> <strong>Diffusion Policy</strong> denoises an action sequence
                 over many steps, resulting in high inference costs. <br><strong>Consistency Policy</strong> generates an action sequence in a single
                 step.</p>              </div>
               <div style="flex-basis: 60%;">
@@ -419,19 +421,26 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@inproceedings{prasad2024consistency,
-  title     = {Consistency Accelerated Policy Networks},
-  author    = {Prasad, Aaditya and Lin, Kevin and Wu, Jimmy and Zhou, Liqun and Bohg, Jeannette},
-  booktitle = {Robotics: Science and Systems},
-  year      = {2024},
-  url       = {https://openreview.net/forum?id=Yfqe0ZH1IV}
-}</code></pre>
+      title     = {Consistency Policy: Accelerated Visuomotor Policies via Consistency Distillation},
+      author    = {Prasad, Aaditya and Lin, Kevin and Wu, Jimmy and Zhou, Linqi and Bohg, Jeannette},
+      booktitle = {Robotics: Science and Systems},
+      year      = {2024},
+    }
+    </code></pre>
   </div>
 </section>
 
 <section class="section" id="Acknowledgements">
   <div class="container is-max-desktop content">
     <h2 class="title">Acknowledgements</h2>
-    <p>Thanks to Toyota Research Institute for assisting in funding this work!</p>
+    <p>This work was supported in part by the Toyota Research Institute, and was completed at IPRL lab. The views and conclusions contained herein are those of the authors and should not be interpreted as necessarily representing the official policies, either expressed or implied, of the sponsers.</p>
+  </div>
+</section>
+
+<section class="section" id="Acknowledgements">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Contact</h2>
+    <p>If you have any questions, please feel free to contact <a href="mailto:aadityap@stanford.edu">Aaditya Prasad</a>.</p>
   </div>
 </section>
 
@@ -452,11 +461,7 @@
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            This means you are free to borrow the <a
-              href="https://github.com/consistency-policy/consistency-policy.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            Website template borrowed from <a href="https://nerfies.github.io/">NeRFies</a>
           </p>
         </div>
       </div>

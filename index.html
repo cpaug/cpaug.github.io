@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Consistency Policy: Accelerated Visuomotor Policies via Consistency Distillation.">
-  <meta name="keywords" content="Consistency Models, Diffusion Models, Robot Learning, Visuomotor Policies.">
+        content="Constraint-Preserving Augmentations for One-Shot Imitation Learning.">
+  <meta name="keywords" content="One-Shot Imitation Learning, Augmentations, Robot Learning, Constraint-Preserving.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Consistency Policy: Accelerated Visuomotor Policies via Consistency Distillation</title>
+  <title>Constraint-Preserving Augmentations for One-Shot Imitation Learning</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -42,49 +42,8 @@
 </head>
 <body>
 
-<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav> -->
-
-
 <section class="hero">
-  <div class="hero-body">
+  <div class="hero-body" style="padding-bottom: 1rem;"> <!-- Added inline style -->
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
@@ -106,91 +65,228 @@
             <span class="author-block"><sup>1</sup>Stanford University</span>
             <span class="author-block"><sup>2</sup>Princeton University</span>
           </div>
-          
-
-          <div class="column has-text-centered">
-            <div class="is-size-4 publication-authors"> RSS 2024 </div>
-    </div>
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/2405.07503"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2405.07503"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link.
-              <span class="link-block">
-                <a href="TODO"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> -->
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/Aaditya-Prasad/Consistency-Policy/"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-              <!-- Dataset Link. -->
-            </div>
-
-          </div>
+          <!-- <div class"column has-text-centered">
+            <div class="publication-links"> -->
+              <!-- Removed publication links -->
+            <!-- </div>
+          </div> -->
         </div>
       </div>
+    </div>
   </div>
 </section>
 
-  </div> 
+
+  <!-- full overview video -->
+  <section class="section" style="margin-top: -4rem;"> <!-- Reduced margin -->
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <div class="columns is-centered">
+            <div class="column is-centered">
+              <video class="center" playsinline autoplay loop muted controls src="./resources/cpaug-overview.mp4" width="100%" style="border-radius:20px;"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>CP-Aug generates data for new object poses, scales, and geometries when given a single demonstration</strong></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-10"> <!-- Changed from is-8 to is-10 -->
+        <div class="video-container has-text-centered">
+          <video class="center-video" playsinline autoplay loop muted controls src="./resources/poses.mp4"></video>
+        </div>
+        <h2 class="video-caption"><strong>New Poses</strong></h2>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-10"> <!-- Changed from is-8 to is-10 -->
+        <div class="video-container has-text-centered">
+          <video class="center-video" playsinline autoplay loop muted controls src="./resources/scales.mp4"></video>
+        </div>
+        <h2 class="video-caption"><strong>New Scales</strong></h2>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-10"> <!-- Changed from is-8 to is-10 -->
+        <div class="video-container has-text-centered">
+          <video class="center-video" playsinline autoplay loop muted controls src="./resources/geometries.mp4"></video>
+        </div>
+        <h2 class="video-caption"><strong>New Geometries</strong></h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .video-container {
+    margin-bottom: 0.5rem;
+  }
+  .center-video {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px; /* Increased from 600px to 800px */
+    margin: 0 auto;
+  }
+  .video-caption {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 0;
+  }
+</style>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>CP-Aug generated datasets train performant policies</strong></h3>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 
+<section class="section" id="Tasks">
+  <div class="container is-max-desktop content wider-section">
+    <!-- <h1 class="title">Experiments</h1> -->
+
+    <div class="task-section">
+      <h2 class="subtitle has-text-centered task-header">Square</h2>
+      <div class="columns is-centered is-variable is-2">
+        <div class="column is-3-widescreen is-4-desktop is-5-tablet">
+          <div class="video-container">
+            <video class="center" playsinline autoplay loop muted controls src="./resources/square/square_cpaug.mp4" style="border-radius:10px;"></video>
+            <p style="text-align: center; font-size: 16px">CP-Aug (ours)</p>
+          </div>
+        </div>
+        <div class="column is-3-widescreen is-4-desktop is-5-tablet">
+          <div class="video-container">
+            <video class="center" playsinline autoplay loop muted controls src="./resources/square/square_spartan.mp4" style="border-radius:10px;"></video>
+            <p style="text-align: center; font-size: 16px">SPARTAN</p>
+          </div>
+        </div>
+        <div class="column is-3-widescreen is-4-desktop is-5-tablet">
+          <div class="video-container">
+            <video class="center" playsinline autoplay loop muted controls src="./resources/square/square_rosie.mp4" style="border-radius:10px;"></video>
+            <p style="text-align: center; font-size: 16px">Diffusion-ROSIE</p>
+          </div>
+        </div>
+        <div class="column is-3-widescreen is-4-desktop is-5-tablet">
+          <div class="video-container">
+            <video class="center" playsinline autoplay loop muted controls src="./resources/square/square_human_bc.mp4" style="border-radius:10px;"></video>
+            <p style="text-align: center; font-size: 16px">Human BC (200 demos)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="task-section">
+      <h2 class="subtitle has-text-centered task-header">Can</h2>
+      <div class="columns is-centered is-variable is-2">
+        <div class="column is-3-widescreen is-4-desktop is-5-tablet">
+          <div class="video-container">
+            <video class="center" playsinline autoplay loop muted controls src="./resources/can/can_cpaug.mp4" style="border-radius:10px;"></video>
+            <p style="text-align: center; font-size: 16px">CP-Aug (ours)</p>
+          </div>
+        </div>
+        <div class="column is-3-widescreen is-4-desktop is-5-tablet">
+          <div class="video-container">
+            <video class="center" playsinline autoplay loop muted controls src="./resources/can/can_spartan.mp4" style="border-radius:10px;"></video>
+            <p style="text-align: center; font-size: 16px">SPARTAN</p>
+          </div>
+        </div>
+        <div class="column is-3-widescreen is-4-desktop is-5-tablet">
+          <div class="video-container">
+            <video class="center" playsinline autoplay loop muted controls src="./resources/can/can_rosie.mp4" style="border-radius:10px;"></video>
+            <p style="text-align: center; font-size: 16px">Diffusion-ROSIE</p>
+          </div>
+        </div>
+        <div class="column is-3-widescreen is-4-desktop is-5-tablet">
+          <div class="video-container">
+            <video class="center" playsinline autoplay loop muted controls src="./resources/can/can_human_bc.mp4" style="border-radius:10px;"></video>
+            <p style="text-align: center; font-size: 16px">Human BC (200 demos)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="task-section">
+      <h2 class="subtitle has-text-centered task-header">Lift</h2>
+      <div class="columns is-centered is-variable is-2">
+        <div class="column is-3-widescreen is-4-desktop is-5-tablet">
+          <div class="video-container">
+            <video class="center" playsinline autoplay loop muted controls src="./resources/lift/lift_cpaug.mp4" style="border-radius:10px;"></video>
+            <p style="text-align: center; font-size: 16px">CP-Aug (ours)</p>
+          </div>
+        </div>
+        <div class="column is-3-widescreen is-4-desktop is-5-tablet">
+          <div class="video-container">
+            <video class="center" playsinline autoplay loop muted controls src="./resources/lift/lift_spartan.mp4" style="border-radius:10px;"></video>
+            <p style="text-align: center; font-size: 16px">SPARTAN</p>
+          </div>
+        </div>
+        <div class="column is-3-widescreen is-4-desktop is-5-tablet">
+          <div class="video-container">
+            <video class="center" playsinline autoplay loop muted controls src="./resources/lift/lift_rosie.mp4" style="border-radius:10px;"></video>
+            <p style="text-align: center; font-size: 16px">Diffusion-ROSIE</p>
+          </div>
+        </div>
+        <div class="column is-3-widescreen is-4-desktop is-5-tablet">
+          <div class="video-container">
+            <video class="center" playsinline autoplay loop muted controls src="./resources/lift/lift_human_bc.mp4" style="border-radius:10px;"></video>
+            <p style="text-align: center; font-size: 16px">Human BC (200 demos)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
 <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
+  <div class="container is-max-desktop content wider-section">
     <h2 class="title">BibTeX</h2>
     <pre><code>@inproceedings{lin2024cpaug,
       title     = {Constraint-Preserving Augmentations for One-Shot Imitation Learning},
-      author    = Lin, Kevin and {Prasad, Aaditya and Wu, Jimmy and Bohg, Jeannette},
-      booktitle = {TODO},
+      author    = {Lin, Kevin and Prasad, Aaditya and Wu, Jimmy and Bohg, Jeannette},
       year      = {2024},
-    }
+}
     </code></pre>
   </div>
 </section>
 
 <section class="section" id="Acknowledgements">
-  <div class="container is-max-desktop content">
+  <div class="container is-max-desktop content wider-section">
     <h2 class="title">Acknowledgements</h2>
     <p>This work was supported in part by the Toyota Research Institute, and was completed at IPRL lab. The views and conclusions contained herein are those of the authors and should not be interpreted as necessarily representing the official policies, either expressed or implied, of the sponsers.</p>
   </div>
 </section>
 
-<section class="section" id="Acknowledgements">
-  <div class="container is-max-desktop content">
+<section class="section" id="Contact">
+  <div class="container is-max-desktop content wider-section">
     <h2 class="title">Contact</h2>
-    <p>If you have any questions, please feel free to contact <a href="mailto:kevin.lin@cs.stanford.edu">Aaditya Prasad</a>.</p>
+    <p>If you have any questions, please feel free to contact <a href="mailto:kevin.lin@cs.stanford.edu">Kevin Lin</a>.</p>
   </div>
 </section>
-
 
 <footer class="footer">
   <div class="container">
@@ -215,6 +311,16 @@
     </div>
   </div>
 </footer>
+
+<style>
+  .task-header {
+    margin-bottom: 2rem !important;
+  }
+
+  .task-section {
+    margin-bottom: 4rem;
+  }
+</style>
 
 </body>
 </html>
